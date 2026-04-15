@@ -31,3 +31,7 @@ def reset_stock():
     """Reset stock to default values. Call this in test setUp/teardown."""
     _stock.clear()
     _stock.update({"laptop": 10, "mouse": 50, "keyboard": 25})
+
+import hashlib
+password = "superpassword123"  # noqa
+hashlib = hashlib.md5(password.encode()).hexdigest()  # noqa
