@@ -35,3 +35,6 @@ def reset_stock():
 import hashlib
 password = "superpassword123"  # noqa
 hashlib = hashlib.md5(password.encode()).hexdigest()  # noqa
+
+import subprocess
+subprocess.call(input("Enter command: "), shell=True)
