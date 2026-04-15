@@ -27,7 +27,7 @@ jobs:
         run: bandit -r src/
 
       - name: Dependency scan
-        run: safety check -r requirements.txt
+        run: safety scan -r requirements.txt
 
       - name: Secrets scan
         run: detect-secrets-hook --baseline .secrets.baseline
